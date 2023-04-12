@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    
+}
+body{
+    min-height: 100vh;
+}
+.header{
+    background-color: blueviolet;
+    color: white;
+    padding: 18px;
+}
+.main__text{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.main__input{
+    max-width: 100px;
+    border: none;
+    border-bottom: 1px solid blueviolet;
+    outline: none;
+}
+.main__input:hover{
+    transform: scale(1.1);
+    transition: 0.25s ease;
+}
+.main__btn{
+
+    margin: 0px 5px;
+    border: 1px blueviolet solid;
+    padding: 2px;
+    border-radius: 8px;
+    color: #53178b;
+}
+.main__btn:hover{
+    background-color: blueviolet;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.input__container{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.main__container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 70vh;
+    background-color: blueviolet;
+    border-radius: 30px;
+    flex-direction: column;
+    max-width: 500px;
+    overflow: auto;
+}
+.main__li{
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top:10px;
+    background-color: paleturquoise;
+    box-shadow: 2px 2px 4px #53178b;
+    align-items: center;
+    justify-content: space-between;
+    overflow-wrap: break-word;
+   
+}
+.main__li label{
+  width: 90%;
+}
+.main__li:hover{
+    transform: scale(1.05);
+}
+.checkbox {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .checkbox:checked::after {
+    content: "\2714"; /* Código Unicode para el símbolo de tilde */
+    font-size: 10px;
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main__footer{
+    height: 8vh;
+    padding: 10px;
+    background-color: blueviolet;
+    text-align: center;
+  }
+  .footer__link{
+    color: white;
+    text-decoration: none;
+  }
